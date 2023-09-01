@@ -2,12 +2,12 @@
 
 # Fetch a list of images, with numerical incrementing suffixes
 
-STARTVAL=0
+STARTVAL=100
 ENDVAL=10000
 
 echo "Image count: $ENDVALEXCLUDING"
 
-PATH_SUFFIX="cryptopunk"
+PATH_SUFFIX="punk"
 FILE_TYPE=".png"
 OUT_DIR=$(pwd)/$PATH_SUFFIX/
 
@@ -19,7 +19,7 @@ fi
 echo "Output dir: $OUT_DIR"
 
 # Fill out URLs and paths
-BASE_URL="https://cryptopunks.app/cryptopunks/"
+BASE_URL="https://unpkg.com/cryptopunk-icons@1.1.0/app/assets/"
 EXTENDED_URL=$BASE_URL$PATH_SUFFIX
 
 for ((i=STARTVAL; i<ENDVAL; i++)); do
